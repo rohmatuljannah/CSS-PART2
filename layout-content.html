@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		/*Tiga kolom float yang panjang ke bawahnya tidak sama*/
+		.aside, .article{
+			float: left;
+			padding: 10px;
+		}
+		/*Kolom pertama dan ketiga*/
+		.aside{
+			width: 25%;
+		}
+		/*Kolom kedua*/
+		.article{
+			width: 50px;
+		}
+		/*Responsive layout-kolom di cointainer menjadi baris*/
+		@media(max-width: 600px){
+			.asside, .article{
+				width: 100%
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="aside">
+			<h2>Side</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+		</div>
+		<div class="article">
+			<h2>Main Content</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+		<div class="aside">
+			<h2>Side</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+		</div>
+	</div>
+
+
+</body>
+</html>
